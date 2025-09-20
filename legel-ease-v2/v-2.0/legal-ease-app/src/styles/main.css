@@ -1,0 +1,40 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* For smooth page transitions */
+.page {
+    display: none;
+}
+.page.active {
+    display: block;
+}
+
+/* Custom shadow for top navigation */
+.shadow-top {
+    box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1), 0 -2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/* Custom scrollbar for chat */
+.chat-container::-webkit-scrollbar {
+    width: 4px;
+}
+.chat-container::-webkit-scrollbar-thumb {
+    background-color: #4f46e5;
+    border-radius: 20px;
+}
+.chat-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Dark mode configuration */
+:root.dark {
+    color-scheme: dark;
+}
+
+/* Tailwind dark mode config */
+tailwind.config = {
+    darkMode: 'class',
+}
